@@ -3,7 +3,7 @@
 
 ## Overview:
 
-In this project, we need to implement a path planning algorithm to drive a car in a highway scenario. For this I will be using a simulator provided by [udacity](https://github.com/udacity/self-driving-car-sim/releases/tag/T3_v1.2). This simulator sends car's information such as position and velocity and sensor fusion information about the rest of the cars in the scenario. The communicaiton between the simulator and the code for path planner is done using [Websocket](https://en.wikipedia.org/wiki/WebSocket).
+In this project, I will be implementing a path planning algorithm to drive a car in a highway scenario. For this I will be using a simulator provided by [udacity](https://github.com/udacity/self-driving-car-sim/releases/tag/T3_v1.2). This simulator sends car's information such as position and velocity and sensor fusion information about the rest of the cars in the scenario. The communicaiton between the simulator and the code for path planner is done using [Websocket](https://en.wikipedia.org/wiki/WebSocket).
 
 
 ## Goals
