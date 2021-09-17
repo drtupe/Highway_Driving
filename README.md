@@ -125,7 +125,7 @@ Based on the prediction of the situation we are in, this code increases the spee
 
 ##### Trajectory:
 
-This code does the calculation of the trajectiry based on the speed and lane output from the behavior, car coordinates past path points.
+This code does the calculation of the trajectory based on the speed and lane output from the behavior, car coordinates past path points.
 
 First, the last two calculation of the previous trajectory or the car position if there are no previous trajectory. As used in conjunction three points at a far distance to initialize the spline calculation. To make the work less complicated to the spline calculation based on those points, the coordinates are transformed to local car coordinates.
 
