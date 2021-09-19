@@ -6,7 +6,7 @@
 In this project, I will be implementing a path planning algorithm to drive a car in a highway scenario. For this I will be using a simulator provided by [udacity](https://github.com/udacity/self-driving-car-sim/releases/tag/T3_v1.2). This simulator sends car's information such as position and velocity and sensor fusion information about the rest of the cars in the scenario. The communicaiton between the simulator and the code for path planner is done using [Websocket](https://en.wikipedia.org/wiki/WebSocket).
 
 
-## Goals
+## Goals:
 In this project my goal is to safely navigate around a virtual highway with other traffic that is driving +-10 MPH of the 50 MPH speed limit. I have being provided the car's localization and sensor fusion data, there is also a sparse map list of waypoints around the highway. The car should try to go as close as possible to the 50 MPH speed limit, which means passing slower traffic when possible, note that other cars will try to change lanes too. The car should avoid hitting other cars at all cost as well as driving inside of the marked road lanes at all times, unless going from one lane to another. The car should be able to make one complete loop around the 6946m highway. Since the car is trying to go 50 MPH, it should take a little over 5 minutes to complete 1 loop. Also the car should not experience total acceleration over 10 m/s^2 and jerk that is greater than 10 m/s^3.
 
 ### The map of the highway is in data/highway_map.txt
@@ -14,7 +14,7 @@ Each waypoint in the list contains  [x,y,s,dx,dy] values. x and y are the waypoi
 
 The highway's waypoints loop around so the frenet s value, distance along the road, goes from 0 to 6945.554.
 
-## Basic Build Instructions
+## Basic Build Instructions:
 
 1. Clone this repo.
 2. Make a build directory: `mkdir build && cd build`
@@ -23,7 +23,7 @@ The highway's waypoints loop around so the frenet s value, distance along the ro
 
 Here is the data provided from the Simulator to the C++ Program
 
-#### Main car's localization Data (No Noise)
+#### Main car's localization Data (No Noise):
 
 ["x"] The car's x position in map coordinates
 
@@ -37,7 +37,7 @@ Here is the data provided from the Simulator to the C++ Program
 
 ["speed"] The car's speed in MPH
 
-#### Previous path data given to the Planner
+#### Previous path data given to the Planner:
 
 //Note: Return the previous list but with processed points removed, can be a nice tool to show how far along
 the path has processed since last time. 
@@ -46,7 +46,7 @@ the path has processed since last time.
 
 ["previous_path_y"] The previous list of y points previously given to the simulator
 
-#### Previous path's end s and d values 
+#### Previous path's end s and d values: 
 
 ["end_path_s"] The previous list's last point's frenet s value
 
@@ -56,7 +56,7 @@ the path has processed since last time.
 
 ["sensor_fusion"] A 2d vector of cars and then that car's [car's unique ID, car's x position in map coordinates, car's y position in map coordinates, car's x velocity in m/s, car's y velocity in m/s, car's s position in frenet coordinates, car's d position in frenet coordinates. 
 
-## Details
+## Details:
 
 1. The car uses a perfect controller and will visit every (x,y) point it recieves in the list every .02 seconds. The units for the (x,y) points are in meters and the spacing of the points determines the speed of the car. The vector going from a point to the next point in the list dictates the angle of the car. Acceleration both in the tangential and normal directions is measured along with the jerk, the rate of change of total Acceleration. The (x,y) point paths that the planner recieves should not have a total acceleration that goes over 10 m/s^2, also the jerk should not go over 50 m/s^3. Also currently jerk is over a .02 second interval, it would probably be better to average total acceleration over 1 second and measure jerk from that.
 
@@ -135,13 +135,13 @@ In order to ensure more continuity on the trajectory, the pass trajectory points
 
 The implementation of the path planning algorithm worked pretty well. For future enhancements of the code, I would like to structure the code with proper structure for different section of functions. Also, it would be intresting to check the implementation of state chart for behavior planning and the evaluation of different behaviours and trajectories based on cost functions would improve the code of the path planner.
 
-## Tips
+## Tips:
 
 A really helpful resource for doing this project and creating smooth trajectories was using http://kluge.in-chemnitz.de/opensource/spline/, the spline function is in a single hearder file is really easy to use.
 
 ---
 
-## Dependencies
+## Dependencies:
 
 * cmake >= 3.5
   * All OSes: [click here for installation instructions](https://cmake.org/install/)
