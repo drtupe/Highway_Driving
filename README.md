@@ -108,8 +108,8 @@ Code consists of 3 parts:
 This part of the code deals with the position, velocity (of ego vehicle) and sensor fusion data. It intends to reason about the environment. Following are the points lookout to be captured by this block of code:
 
 * Is there a car in front of the ego vehicle?
-* Is ther a car to the right of ego vehicle for making a lane change?
-* Is ther a car to the left of ego vehicle for making a lane change?
+* Is there a car to the right of ego vehicle for making a lane change?
+* Is there a car to the left of ego vehicle for making a lane change?
 
 These questions are answered by calculating the lane each other car is and the position it will be at the end of the last planned trajectory. A car is marked dangerous when its distance to ego vehicle is less than 30 meters in front or behind us.
 
@@ -117,7 +117,7 @@ These questions are answered by calculating the lane each other car is and the p
 
 This part decides what should be the behaviour of ego vehicle to sensed prediction. This part tries to answer following questions:
 
-* If ther is a vehicle in front of us, do ego vehicle change lane?
+* If there is a vehicle in front of us, do ego vehicle change lane?
 * Does ego vehicle need to speed up or slow down?
 
 Based on the prediction of the situation we are in, this code increases the speed, decrease speed, or make a lane change when it is safe. Instead of increasing the speed at this part of the code, a speed_diff is created to be used for speed changes when generating the trajectory in the last part of the code. This approach makes the car more responsive acting faster to changing situations like a car in front of it trying to apply brake to cause a collision.
