@@ -45,7 +45,7 @@ the path has processed since last time.
 
 ["previous_path_y"] The previous list of y points previously given to the simulator
 
-#### Previous path's end s and d values: 
+#### Previous path's end 's' and 'd' values: 
 
 ["end_path_s"] The previous list's last point's frenet s value
 
