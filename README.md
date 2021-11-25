@@ -83,7 +83,7 @@ During the test run, which was around 10 mins, no speed limit violation was dete
 
 ### Max. acceleration and jerk limits:
 
-The car does not exceed the max limits for acceleration of 10 m/s^2 and a jerk of 10 m/s^3.
+The car does not exceed the max limits for acceleration of 10 m/s^2 and a jerk of 50 m/s^3.
 
 ### Collision:
 
